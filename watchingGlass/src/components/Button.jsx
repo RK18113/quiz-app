@@ -11,6 +11,11 @@ function Button({ color, text, handleContinue }) {
         font-roboto
         text-[15px]
         w-[80vw]
+        hover:scale-105
+        transition 
+        ease-in-out 
+        delay-150
+        cursor-pointer
         ${text === "OKAY" ? "sm:w-[400px]" : "sm:w-[300px]"}
     `;
 

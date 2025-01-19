@@ -10,7 +10,7 @@ function NavBar({title}) {
             { title ? <h2 className='font-roboto pl-6'>Fortune Quiz</h2> : <h2 className='mt-10'></h2>}
           </div>
           <Link to="/">
-              <img src={ExitButton} className='w-[35px] h-[35px]' />
+              <img src={ExitButton} className='w-[35px] h-[35px] hover:scale-110' />
           </Link>
         </div>
     </div>
