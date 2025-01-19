@@ -11,6 +11,7 @@ function Button({ color, text, handleContinue }) {
         border-none
         rounded-md
         font-roboto
+        text-[15px]
     `;
 
     return (
