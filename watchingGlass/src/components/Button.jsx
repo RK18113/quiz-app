@@ -11,7 +11,7 @@ function Button({ color, text, handleContinue }) {
         font-roboto
         text-[15px]
         w-[80vw]
-        ${text === "OKAY" ? "md:w-[400px]" : "md:w-[300px]"}
+        ${text === "OKAY" ? "sm:w-[400px]" : "sm:w-[300px]"}
     `;
 
     return (

@@ -103,7 +103,7 @@ function Questions() {
                 </div>
             </div>
 
-            <div className="flex items-center justify-center sm:gap-40 gap-10 w-full sm:bg-white sm:h-[80px] h-[100px] bg-[#EDE8E3] fixed bottom-0 font-roboto">
+            <div className="flex items-center justify-center sm:gap-36 gap-10 w-full sm:bg-white sm:h-[80px] h-[100px] bg-[#EDE8E3] fixed bottom-0 font-roboto">
                 <div className="hidden sm:block">
                     <ProgressBar
                         total={totalQuestions}
