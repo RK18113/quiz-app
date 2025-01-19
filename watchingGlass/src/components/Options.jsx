@@ -10,8 +10,7 @@ function Options({ optionSelected, currentOption, element, handleOptionSelection
                     ${optionSelected === currentOption ? "bg-green-500" : "bg-white"}
                     justify-start
                     items-center
-                    lg:w-[28vw]
-                    md:w-[40vw]
+                    sm:w-[400px]
                     w-[80vw]
                     p-4
                     pl-5

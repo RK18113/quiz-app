@@ -7,8 +7,9 @@ function Result() {
   return (
     <>
       <NavBar title={false} />
-      <div className="flex h-full justify-center items-center md:mt-[8%] mt-3 font-roboto md:text-[25px] text-[20px] font-bold text-[#191D63]">
-        <div className="flex items-center w-[80%] lg:w-[60%] flex-col md:flex-row m-0 p-0"> 
+      {/* Main content container with min-height to prevent shifting */}
+      <div className="flex min-h-[calc(100vh-180px)] justify-center items-center font-roboto md:text-[25px] text-[20px] font-bold text-[#191D63]">
+        <div className="flex items-center mt-10 sm:mt-0 w-[90%] lg:w-[800px] flex-col md:flex-row m-0 p-0 mb-[100px]"> 
           <div>
             <img src={Present} alt="Gift Box" className="mb-4 w-28 md:w-48 m-0 p-0" /> 
             <p className='p-0 m-0 text-center'>Results</p>
@@ -20,13 +21,13 @@ function Result() {
             </p>
             <p className='text-center'>
               Do blah blah and everything will be amazing and beautiful and perfect and pay me 
-              $12031231 for doing this service for you, and I’ll give you 3 more predictions.
+              $12031231 for doing this service for you, and I'll give you 3 more predictions.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-around w-full sm:bg-white h-[100px] fixed bottom-0">
+      <div className="flex items-center justify-around w-full md:bg-white h-[100px] fixed bottom-0">
         <Button
           color="green"
           text="OKAY"

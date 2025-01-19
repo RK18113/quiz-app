@@ -10,11 +10,11 @@ function Home() {
                 <img 
                     src={monocle} 
                     alt="monocle eyeglass" 
-                    className='sm:w-[30%] w-[60%]'
+                    className='md:w-[30%] w-[50%]'
                 />
                 
                 <div className='text-center sm:w-[60%] w-full'>
-                    <h1 className='text-5xl font-bold'>
+                    <h1 className='text-4xl md:text-5xl font-bold'>
                         <span className='block pb-5'>The</span>
                         <span className='block'>Watching Glass</span>
                     </h1>

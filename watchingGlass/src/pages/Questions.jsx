@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import ProgressBar from '../components/ProgressBar';
 import Button from '../components/Button';
 import Options from '../components/Options';
+import CustomColorPicker from '../components/CustomColorPicker.jsx';
 
 
 function Questions() {
@@ -39,6 +40,10 @@ function Questions() {
         );
     }
 
+    function handleColorDateSelection(selOpt) {
+        setOptionSelected(selOpt);
+    }
+
     function handleContinue() {
         if (!optionSelected) return;
 
@@ -61,7 +66,7 @@ function Questions() {
                 />
             </div>
 
-            <div className="flex flex-wrap items-center justify-center h-full font-roboto md:mt-10 mt-1 text-[#191D63] overflow-hidden">
+            <div className="flex flex-wrap items-center justify-center h-full font-roboto sm:mt-10 text-[#191D63] overflow-hidden">
                 <h1 className="w-[80%] text-left sm:text-center text-2xl">
                     {questions[currentIndex].question}
                 </h1>
@@ -74,12 +79,12 @@ function Questions() {
                         if (element === "calendar"){
                             return (
                                 <div className='w-full flex justify-center'>
-                                    <input type="date" name="" id="" className='lg:w-[28vw] md:w-[40vw] w-[80vw] rounded-md p-4 py-8 font-roboto font-bold' onChange={handleOptionSelection}/>
+                                    <input type="date" name="" id="" className='sm:w-[300px] w-[80vw] rounded-md p-4 py-8 font-roboto font-bold' onChange={handleColorDateSelection}/>
                                 </div>)
                         } else if (element === "colorpicker"){
                             return (
-                                <div className='w-full flex justify-center'>
-                                    <input type="color" name="" id="" className='w-[30vw] rounded-md h-[80px] p-2' onChange={handleOptionSelection}/>
+                                <div className='w-full h-[400px] flex justify-center'>
+                                    <CustomColorPicker onChange={handleColorDateSelection} />
                                 </div>
                             )
                         }
@@ -98,7 +103,7 @@ function Questions() {
                 </div>
             </div>
 
-            <div className="flex items-center justify-center md:gap-72 sm:gap-40 gap-10 w-full sm:bg-white sm:h-[80px] h-[100px] bg-[#EDE8E3] fixed bottom-0 font-roboto">
+            <div className="flex items-center justify-center sm:gap-40 gap-10 w-full sm:bg-white sm:h-[80px] h-[100px] bg-[#EDE8E3] fixed bottom-0 font-roboto">
                 <div className="hidden sm:block">
                     <ProgressBar
                         total={totalQuestions}
